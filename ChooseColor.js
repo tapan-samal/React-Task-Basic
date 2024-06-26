@@ -11,6 +11,7 @@ const ChooseColor = () => {
       <h2>Color Picker</h2>
       <div>
         <input type="color" onChange={handleChange} />
+        <br /> <br />
         <div
           style={{ width: "300px", height: "50px", backgroundColor: color }}
         ></div>

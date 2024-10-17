@@ -13,6 +13,9 @@ const SearchApi = () => {
     const fetchApi = async () => {
       try {
         const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error("Failed to fatch data!");
+        }
         const result = await response.json();
 
         setApiData(result.slice(0, 10)); 
